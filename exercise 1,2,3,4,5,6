@@ -1,5 +1,4 @@
 #ex1
-print ("ex1.py")
 print ("Hello World")
 print ("Hello Again")
 print ("I like typing this.")
@@ -9,7 +8,6 @@ print ("I'd much rather you 'not'.")
 print ('I "said" do not touch this.')
 
 #ex2
-print("ex2.py")
 # A comment, this is so you can read your program later.
 #Anything after the # is ignored by python.
 
@@ -21,7 +19,6 @@ print ("I could have code like this.") # and the comment after is ignored.
 print("This will run.")
 
 #ex3
-print("ex3.py")
 print("I will now count my chickens:")
 print ("Hens", 25+30/6)
 print ("Roosters",100-25*3%4)
