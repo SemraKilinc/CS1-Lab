@@ -1,3 +1,4 @@
+#1
 n=int(input("Enter a number:"))
 count=0
 while (n>0):
@@ -5,7 +6,7 @@ while (n>0):
   n=n//10
 print("The number of digits are:",count)
 
-
+#2
 x=int(input("Enter number 1:"))
 y=int(input("Enter number 2:"))
 sum1=0
@@ -20,13 +21,13 @@ if(sum1==x and sum2==y):
   print('Friendly pair')
 else:
   print('Not friendly pair')
-
+#4
 def maxHandshake(n):
   return int((n*(n-1))/2)
 n=int(input("Enter a number:"))
 print(maxHandshake(n))
 
-
+#5
 num=int(input("Enter a number:"))
 sum=0
 tempt=num
