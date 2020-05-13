@@ -1,26 +1,25 @@
-def numbers(num_list):  
-    mul = 1  
-    for x in num_list:  
-        mul = mul * x   
-    print(mul) 
+#1
+def max_of_two( x, y ):
+ if x > y:
+ return x
+ return y
+def max_of_three( x, y, z ):
+ return max_of_two( x, max_of_two( y, z ) )
+print(max_of_three(3, 6, -5))
 
-
-items_to_mul = (8, 2, 3, -1, 7) 
-numbers(items_to_mul)
-
-def find_max(a,b,c):
-  if a > b and a > c:
-    max_nu = a
-  elif b > a and b > c:
-    max_nu = b
-  else:
-    max_nu = c
-  return max_nu
+#2
+def multiply(numbers):
+ total = 1
+ for x in numbers:
+ total *= x
+ return total
+print(multiply((8, 2, 3, -1, 7)))
 
 def main ():
   print("max of 1,2,3=",find_max(1,2,3))
 main()
 
+#1]3
 def test_prime(n):
  if (n==1):
     return False
@@ -36,7 +35,7 @@ def test_prime(n):
 
 print(test_prime(2))
 
-
+#4
 def perfect_number(n):
   sum = 0
   for x in range(1,n):
@@ -46,7 +45,7 @@ def perfect_number(n):
 print(perfect_number(6))
 
 
-
+%
 
 def pascal_triangle(n):
   trow=[1]
