@@ -6,12 +6,13 @@ choice = input("> ")
 if "0" in choice or "1" in choice:
   how_much = int(choice)
 else:
-  print("Man, learn to type a number.")
+ dead("Man, learn to type a number.")
+
 if how_much < 50:
  print("Nice, you're not greedy, you win!")
  exit(0)
 else:
-  print("You greedy bastard!")
+ dead("You greedy!")
 
 
 def bear_room():
@@ -19,19 +20,19 @@ def bear_room():
  print("The bear has a bunch of honey.")
  print("The fat bear is in front of another door.")
  print("How are you going to move the bear?")
-bear_moved=False
+ bear_moved = False
 
-while True:
- choice = input("> ")
+ while True:
+  choice = input("> ")
 
 if choice == "take honey":
-  print("The bear looks at you then slaps your face off.")
+ dead("The bear looks at you then slaps your face off.")
 elif choice == "taunt bear" and not bear_moved:
  print("The bear has moved from the door.")
  print("You can go through it now.")
  bear_moved = True
 elif choice == "taunt bear" and bear_moved:
- print("The bear gets pissed off and chews your leg off.")
+ dead("The bear gets pissed off and chews your leg off.")
 elif choice == "open door" and bear_moved:
  gold_room()
 else:
@@ -42,11 +43,13 @@ def cthulhu_room():
  print("Here you see the great evil Cthulhu.")
  print("He, it, whatever stares at you and you go insane.")
  print("Do you flee for your life or eat your head?")
-choice = input("> ")
+
+ choice = input("> ")
+
 if "flee" in choice:
-  gold_room()
+ start()
 elif "head" in choice:
- print("Well that was tasty!")
+ dead("Well that was tasty!")
 else:
  cthulhu_room()
 
@@ -68,4 +71,6 @@ elif choice == "right":
  cthulhu_room()
 else:
  dead("You stumble around the room until you starve.")
-start()
+
+
+ start()
