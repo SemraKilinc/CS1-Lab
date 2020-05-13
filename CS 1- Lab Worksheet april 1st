@@ -21,6 +21,7 @@ if(sum1==x and sum2==y):
   print('Friendly pair')
 else:
   print('Not friendly pair')
+  
 #4
 def maxHandshake(n):
   return int((n*(n-1))/2)
